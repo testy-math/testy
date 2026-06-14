@@ -3,19 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мій перший сайт</title>
+    <title>Мій Перший Сайт</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f0f0f0;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1 { color: #2ea44f; }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            background: #2ea44f;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2ea44f;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2ea44f;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
-    <h1>Привіт! Це мій перший сайт</h1>
-    <p>Він працює на GitHub Pages!</p>
+    <header>
+        <h1>Привіт! 👋</h1>
+        <p class="subtitle">Це мій перший сайт</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Про мене</h2>
+            <p>Я тільки починаю вивчати веб-розробку. Цей сайт створений для практики. Тут я буду розміщувати свої проекти.</p>
+        </section>
+
+        <section>
+            <h2>Мої навички</h2>
+            <p><strong>HTML</strong> • <strong>CSS</strong> • <strong>JavaScript</strong></p>
+            <p>Вчуся створювати сучасні та красиві сайти.</p>
+        </section>
+
+        <section>
+            <h2>Хочеш зв'язатися?</h2>
+            <p>Пиши мені в Telegram або Instagram!</p>
+            <a href="#" class="btn">Написати мені</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Мій Перший Сайт • Зроблено з ❤️ та GitHub</p>
+    </footer>
 </body>
-</html>  
+</html>
